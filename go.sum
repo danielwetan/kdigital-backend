@@ -1,3 +1,5 @@
+github.com/danielwetan/bonjour-go v0.0.0-20200901100831-f6e0bc2eae7c h1:ie3Z/LiiKuD4M4ERNsFC8S4k9bq6Y4mBvG2Ps2uvuiY=
+github.com/danielwetan/bonjour-go v0.0.0-20200901100831-f6e0bc2eae7c/go.mod h1:4GhzhNnvl+WLg1NQ+y18Ij14xpuO7TwBhOhfb78627c=
 github.com/danielwetan/golang-redis-session v0.0.0-20201026045652-2d54f711458d h1:AEhlSW4az47k9W+hWD31Ay3Eytb68zw0BSxwkMBk/TU=
 github.com/danielwetan/golang-redis-session v0.0.0-20201026045652-2d54f711458d/go.mod h1:1kR3EuvAqJKNJLPYaKGv8jzmbT9NRXjpeODCWqOP5Kk=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

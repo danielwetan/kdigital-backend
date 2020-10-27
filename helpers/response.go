@@ -12,3 +12,4 @@ func ResponseMsg(status bool, body interface{}) *Response {
 	}
 	return res
 }
+
