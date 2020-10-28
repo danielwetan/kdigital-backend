@@ -1,0 +1,69 @@
+#### Register
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+Authorization: Basic U0ItTWlkLXNlcnZlci1hUzFFYzRLcGNaTjhSRklYTmtiYzItNGo6
+
+{
+    "username": "daniel",
+    "password": "123"
+}
+
+#### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+Authorization: Basic U0ItTWlkLXNlcnZlci1hUzFFYzRLcGNaTjhSRklYTmtiYzItNGo6
+
+{
+    "username": "daniel",
+    "password": "123"
+}
+
+
+#### Orders
+POST http://localhost:3000/orders
+Content-Type: application/json
+Authorization: Basic U0ItTWlkLXNlcnZlci1hUzFFYzRLcGNaTjhSRklYTmtiYzItNGo6
+
+{
+    "email": "daniel@mail.com",
+    "phone": "62283219431234",
+    "item_name": "Laptop",
+    "item_price": 100000,
+    "item_quantity": 3,
+}
+
+
+#### Midtrans Transaction Status
+GET https://api.sandbox.midtrans.com/v2/GPY16038620639ce8a9/status
+Authorization: Basic U0ItTWlkLXNlcnZlci1hUzFFYzRLcGNaTjhSRklYTmtiYzItNGo6
+
+#### Midtrans Gopay Charge
+POST https://api.sandbox.midtrans.com/v2/charge
+Content-Type: application/json
+Authorization: Basic U0ItTWlkLXNlcnZlci1hUzFFYzRLcGNaTjhSRklYTmtiYzItNGo6
+
+{
+    "payment_type": "gopay",
+    "transaction_details": {
+        "gross_amount": 21000,
+        "order_id": "order-101h-{{$timestamp}}"
+    },
+	"gopay": {
+		"enable_callback": true,
+		"callback_url": "someapps://callback"
+	},
+    "customer_details": {
+        "email": "noreply@example.com",
+        "first_name": "Daniel",
+        "last_name": "Saputra",
+        "phone": "+6281 1234 1234"
+    },
+    "item_details": [
+    {
+       "id": "item01",
+       "price": 21000,
+       "quantity": 1,
+       "name": "Ayam Zozozo"
+    }
+   ]
+}

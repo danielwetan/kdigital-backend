@@ -10,6 +10,7 @@ import (
 func main() {
 
 	routes.Auth()
+	routes.Orders()
 
 	PORT := ":3000"
 	fmt.Println("App running on PORT", PORT[1:])
